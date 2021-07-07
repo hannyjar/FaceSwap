@@ -3,7 +3,7 @@
 const SETTINGS = {
   // art painting settings:
   artPainting: 'mlk.png', // initial art painting
-  detectState: {x:0.44803,y:0.1650,s:0.155,ry:-0.04926}, // detect state in the initial art painting to avoid search step
+  detectState: {x:0.4480,y:0.1650,s:0.155,ry:-0.04926}, // detect state in the initial art painting to avoid search step
 
   nDetectsArtPainting: 25, // number of positive detections to perfectly locate the face in the art painting
   detectArtPaintingThreshold: 0.7,
@@ -11,9 +11,9 @@ const SETTINGS = {
   // hold shape parameters:
   artPaintingMaskScale: [1.05, 1],
   artPaintingMaskOffset: [-0.2, 0.1], //[0.01,0.10], // relative. 1-> 100% scale mask width of the image (or height)
-  artPaintingCropSmoothEdge: 0.3, // crop smooth edge
+  artPaintingCropSmoothEdge: 0.26, // crop smooth edge
   artPaintingHeadForheadY: 0.7, // forhead start when Y>this value. Max: 1
-  artPaintingHeadJawY: 0.5, // lower jaw start when Y<this value. Max: 1
+  artPaintingHeadJawY: 0.3, // lower jaw start when Y<this value. Max: 1
 
   // user crop face and detection settings:
   videoDetectSizePx: 1024,
